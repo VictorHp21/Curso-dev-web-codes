@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        function acao() {
+            alert('event function')
+        }
+    </script>
+</head>
+
+<body>
+
+    <!--Pode se usar mais de um evento na mesma div-->
+
+    <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;">
+
+    </div>
+
+    <!--2 cliques-->
+    <div ondblclick="acao()" style="background: #ae0202; height: 150px; width: 150px;">
+
+    </div>
+
+    <div onmouseup="acao()" style="background: #290ea1; height: 150px; width: 150px;">
+
+    </div>
+
+    <div onmouseover="acao()" style="background: #22b80e; height: 150px; width: 150px;">
+
+    </div>
+
+    <div onmouseout="acao()" style="background: #a70eb8; height: 150px; width: 150px;">
+
+    </div>
+
+</body>
+
+</html>

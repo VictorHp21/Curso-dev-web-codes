@@ -1,0 +1,46 @@
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #bfbf96;
+    color: black;
+
+}
+
+.num {
+    text-align: right;
+}
+
+.code {
+    text-align: left;
+}

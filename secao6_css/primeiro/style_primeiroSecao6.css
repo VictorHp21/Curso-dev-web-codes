@@ -1,0 +1,18 @@
+/* classe */
+.azul {
+    color: blue;
+}
+
+h1 {
+    color: grey;
+}
+
+/* id */
+#principal {
+    color: red;
+}
+
+#principal_conteudo {
+    display: flex;
+    background-color: purple;
+}

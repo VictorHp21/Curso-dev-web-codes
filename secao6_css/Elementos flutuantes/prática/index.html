@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes na prática</title>
+
+    <style>
+
+        body{
+            background: #f4f4f4;
+        }
+
+        #principal{
+            width: 920px;
+            
+        }
+
+        .noticia{
+           background: rgb(193, 190, 190);
+           padding: 5px;
+           width: 280px;
+           margin: 7px;
+           float: left;
+        }
+
+        .imagens{
+            background: white;
+            width: 265px;
+            padding: 5px;
+            float: left;
+            margin: 15px;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="principal">
+
+        <div>
+            <div class="noticia">
+                <h2>Lorem</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quis error sunt vel a corrupti voluptatem possimus qui vitae, quae esse aspernatur cupiditate nulla cum. Provident dolor minus quia laboriosam!
+                </p>
+                <a href="">Veja mais</a>
+            </div>
+
+            <div class="noticia">
+                <h2>Lorem 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quis error sunt vel a corrupti voluptatem possimus qui vitae, quae esse aspernatur cupiditate nulla cum. Provident dolor minus quia laboriosam! 2
+                </p>
+                <a href="">Veja mais</a>
+            </div>
+
+            <div class="noticia">
+                <h2>Lorem 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quis error sunt vel a corrupti voluptatem possimus qui vitae, quae esse aspernatur cupiditate nulla cum. Provident dolor minus quia laboriosam! 3 
+                </p>
+                <a href="">Veja mais</a>
+            </div>
+
+            <div class="clear"></div>
+
+            <div>
+                <div class="imagens">
+                    <img src="imagens/imagem1.png" alt="">
+                    <p>Resumo</p>
+                </div>
+                <div class="imagens">
+                    <img src="imagens/imagem2.png" alt="">
+                    <p>Resumo</p>
+                </div>
+                <div class="imagens">
+                    <img src="imagens/imagem3.png" alt="">
+                    <p>Resumo</p>
+                </div>
+                <div class="imagens">
+                    <img src="imagens/imagem4.png" alt="">
+                    <p>Resumo</p>
+                </div>
+                <div class="imagens">
+                    <img src="imagens/imagem5.png" alt="">
+                    <p>Resumo</p>
+                </div>
+            </div>
+
+         </div>
+  
+    </div> <!-- #principal -->
+    
+</body>
+</html>

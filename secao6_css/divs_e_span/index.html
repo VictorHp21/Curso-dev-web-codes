@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs e Span</title>
+
+    <style>
+
+        #topo {
+            background: rgb(115, 115, 243);
+        }
+
+        #conteudo{
+            background: red;
+        }
+
+        #rodape{
+            background: green;
+        }
+
+        #assinatura{
+            background: yellow;
+        }
+
+        .azul{
+            color: blue;
+        }
+
+        .produto{
+            background: gray;
+            margin: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="topo">
+        <img src="imagens/logo.jpeg" alt="logo_amazon" width="150px">
+
+        <ul>
+            <li>Home</li>
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+
+    <div id="conteudo">
+
+        <h1>teste</h1>
+
+        <div class="produto">
+            Produto 1
+        </div>
+        <div class="produto">
+            Produto 2
+        </div>
+        <div class="produto"> 
+            Produto 3
+        </div>
+    </div>
+
+    <div id="rodape">
+        Todos os<span class="azul"> direitos</span> reservados
+    </div>
+
+<!-- span é inline, um na frete do outro-->
+
+    <span id="assinatura">
+        Victor
+    </span>
+
+    <span>
+        Henrique
+    </span>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluindo javascript no html5</title>
+    <!--Interno
+    com <script>...</script>
+
+    Externo
+    <script src="meu_script.js"></script>
+
+    -->
+
+   
+
+</head>
+<body>
+
+    <h1>Javascript</h1>
+    <input type="text" placeholder="teste de precedência"
+    id="nome"
+    disabled="disabled">
+
+
+     <script>
+       // alert('Olá, mundo!')
+       // se o script for executado antes da criação do elemento(neste caso o INPUT) irá dar um erro de precedência
+       document.getElementById('nome').value = 'Oi'
+
+       // para comentário de múltiplas linhas /*...*/
+    </script>
+</body>
+</html>

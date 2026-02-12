@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        function acao() {
+            alert('event function')
+        }
+
+        function acao1(){
+            alert('evento disparado')
+        }
+    </script>
+</head>
+
+<body>
+
+   <!--
+    onkeydown - apos soltar a tecla
+   onkeypress - apos manter a tecla presionada (quando ela é um caracter)
+   onkeyup - apos apertar a tecla
+   -->
+
+   <input onkeyup="acao1()" type="text">
+
+
+</body>
+
+</html>

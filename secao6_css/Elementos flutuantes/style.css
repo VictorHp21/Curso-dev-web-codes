@@ -1,0 +1,27 @@
+/*Conteúdo flutuante (float)*/
+
+/*Para limpar fluxo flutuante utilize o (clear)*/
+
+
+.conteudo{
+    background: blue;
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+/*.conteudo1{
+    background: rgb(255, 0, 55);
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    conteudos flutuem a esquerda ou direita
+    float: right;
+}*/
+

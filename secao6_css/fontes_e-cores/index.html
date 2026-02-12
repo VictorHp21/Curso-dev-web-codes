@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes e cores</title>
+
+    <style>
+        h1{
+            color: blue;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .formatacao{
+            color: brown;
+            font-size: 21px;
+        }
+
+        .texto{
+            color: rgb(0, 15, 0);
+            /*Medidas que podem ser utilizadas
+
+            px -> tamanho fixo
+
+            % -> porcentagem (tamanho relativo ao tamanho do elemento pai (ou tamanho padrão adotado pelo navegador))
+
+            em -> relativo ao tamanho da fonte do elemento pai
+            
+            */
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 100%;
+        }
+
+        div{
+            font-size: 30px;
+        }
+
+        #lorem2{
+            font-size: 1em;
+            /* se fosse 2em seria 2 vezes o tamanho da fonte do elemento pai ou seja 60px */
+        }
+
+        #lorem3{
+            font-size: 15px; /*tamanho fixo independente do elemento pai*/
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Fontes e Cores</h1>
+
+    <p class="formatacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quia.</p>
+
+    <p class="texto"> Conteudo</p>
+
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem suscipit expedita consectetur optio blanditiis <br> nihil totam numquam quas, voluptate, ratione impedit, ipsa magnam ducimus at aperiam provident consequuntur saepe quis.</p>
+
+    <div> <!--é o elemento pai dos paragrafos abaixo-->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum voluptatibus et deserunt quo vel impedit autem ad tempora sapiente earum corrupti libero nemo, odio doloribus! Repellat error vitae excepturi deleniti. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquam quibusdam unde laborum reiciendis nesciunt, architecto nemo incidunt nulla dolore eius rerum? Debitis minus porro iusto voluptates nam molestias ipsa.</p>
+
+        <p id="lorem2">lorem2</p>
+        <p id="lorem3">Lorem3</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        function acao() {
+            alert('event function')
+        }
+
+        function acao1(){
+            alert('evento disparado')
+        }
+
+         function acao2(){
+            alert('rolando')
+        }
+    </script>
+</head>
+
+<body onresize="alert('event0 disparado')">
+
+   <!--
+    onresize quando a pagina e redimensionada (tamanho da pag)
+    onscroll quando o scrool do mouse é usado
+
+    eventos de FRAME no w3cSchools
+   -->
+
+   <div onscroll="acao2()" style="height: 3000px; width: 125px; background-color: purple;"></div>
+
+
+
+</body>
+
+</html>
