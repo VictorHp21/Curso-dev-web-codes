@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    
+</head>
+<body>
+    
+    <input type="text" placeholder="Digite um caracter aqui" onkeyup="distriCaracter()" id="caracter">
+
+    <hr>
+
+    <span>Letras:</span>
+    <input type="text" disabled id="string">
+
+    <span>Números:</span>
+    <input type="text" disabled id="num">
+
+
+    <script>
+      function distriCaracter(){
+
+       var x = document.getElementById('caracter').value
+
+       x = x.trim()
+
+       if (!isNaN(x)){
+        document.getElementById('num').value = x
+       } else {
+        document.getElementById('string').value = x
+       }
+
+      }
+
+    </script>
+</body>
+</html>
