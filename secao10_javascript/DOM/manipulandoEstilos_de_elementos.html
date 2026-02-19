@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
 
     <script>
-        function mod(corDeFundo){
+        function mod(corDeFundo, l, a) {
             document.getElementById('div').style.background = corDeFundo
+            document.getElementById('div').style.width = l
+            document.getElementById('div').style.height = a
         }
     </script>
 </head>
+
 <body>
-    
+
     <h3>Manipulando estilo</h3>
 
-   <button type="button" onclick="mod('#FF0000')">Vermelhor</button>
-   <button type="button" onclick="mod('#00FF00')">Verde</button>
-   <button type="button" onclick="mod('#0000FF')">Azul</button>
+    <button type="button" onclick="mod('#FF0000', '200px', '20px')">Vermelhor</button>
+    <button type="button" onclick="mod('#00FF00', '300px', '30px')">Verde</button>
+    <button type="button" onclick="mod('#0000FF', '400px', '40px')">Azul</button>
 
-   <hr>
+    <hr>
 
-   <div id="div" style="border: 1px solid black; width: 100px; height: 100px;">
+    <div id="div" style="border: 1px solid black; width: 100px; height: 100px;">
 
-   </div>
+    </div>
 
 
 </body>
+
 </html>
