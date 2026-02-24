@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ex-05</title>
+    
+  
+
+</head>
+<body>
+    <input id="texto" type="text">
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="ordenar()">Ordenar</button>
+
+    <hr>
+
+    <button onclick="exibir()">Mostrar lista</button>
+
+    <p id="campo">
+
+    </p>
+
+
+
+  <script>
+        var lista_texto = Array()
+
+        function adicionar(){
+            var texto = document.getElementById('texto').value
+
+            if (texto == null || texto == ''){
+                alert('Digite um valor válido')
+            } else if (lista_texto.indexOf(texto) !== -1){
+                alert('Elemento já adicionado a lista')
+            } 
+            
+            else {
+                lista_texto.push(texto)
+            }
+
+            document.getElementById('texto').value = ''
+
+            console.log(lista_texto)
+
+        }
+
+        function ordenar(){
+            lista_texto.sort()
+
+            console.log(lista_texto.sort())
+        }
+
+
+
+        function exibir(){
+            document.getElementById('campo').innerHTML = lista_texto
+        }
+
+        
+
+        
+    </script>
+
+</body>
+</html>
