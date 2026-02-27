@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+
+    <script>
+
+        // como passar uma quantidade indefinida de parâmetros e lidar com isso na função
+
+        function soma(){
+
+            var resultado = 0
+
+            for (var i in arguments){
+               // console.log(arguments[i])
+                // percorrendo atributos deste objeto
+
+                resultado += arguments[i]
+            }
+
+            console.log(arguments)
+            // retorna um objeto  de parametros passados para a função ==> arguments
+
+            return resultado
+        }
+
+        console.log(soma(7, 3, 5.2, ' texto ', 5))
+
+    </script>
+    
+</body>
+</html>
