@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - tratamento de erros</title>
+</head>
+
+<body>
+
+    <!--
+
+    try - tente
+    catch - pegar
+    finally - finalmente
+    throw - lançar
+    
+    -->
+
+    <script>
+
+        //netflix exemplo:
+
+        var video = Array()
+
+        video[1] = Array()
+        video[1]['nome'] = 'Love death and robots'
+        video[1]['categoria'] = 'Indie'
+
+        function getVideo(video) {
+            //Lógica
+
+            // pode surgir uma série de erros por ser um requisição http
+
+            //vamos forçar um erro (ou comportamento inesperado) para ter retorno de exceção
+
+            
+
+            try {
+                console.log(video[0]['nome'])
+
+            } catch(erro) {
+
+                trataErro(erro)
+
+                console.log("Agora sim podemos tratar o erro")
+
+                throw new Error('Houve um erro mas n se preocupe estamos trabalhando nisso agora') // lança o erro e para o programa
+
+            } finally {
+                console.log('Sempre passa por aqui (try / catch)')
+            }
+
+
+
+            console.log('A aplicação n morreu!')
+        }
+
+        function trataErro(e){
+            console.log(e)
+        }
+
+        getVideo(video)
+
+    </script>
+
+</body>
+
+</html>
