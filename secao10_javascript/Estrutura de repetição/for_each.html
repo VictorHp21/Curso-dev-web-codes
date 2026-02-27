@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Foreach</title>
+</head>
+<body>
+
+
+    <!--Comando de repetição, no contexto do js serve como uma função para arrays
+    
+    -- Função do prototype objeto array --
+
+
+    -- So atua em valores númericos iniciados em 0, caso o contrário ele irá desconsiderar aquela posição(indice) do array
+
+    -->
+
+    <script>
+
+
+        // Uma callback é uma função chamada de volta (callback = “chamar de volta”) por outra função.   -- uma função dentro de outra função (em outras palavras)
+
+
+        var ListaFuncionários = ['Viviane', 'Rosangela', 'Lucas', 'Fernanda']
+
+        console.log(ListaFuncionários)
+
+        // encapsular função em uma variável
+        var f = function(valor, indice, array){
+            console.log(valor, indice)
+        }
+
+        // tbm pode ser feito desta forma:
+
+        // ListaFuncionarios.forEach(f)
+
+        // passar função de callback
+        ListaFuncionários.forEach(function(valor, indice, array){
+                                            // não é preciso passar todos estes parâmetros (mas se for passar os 3 deve ser nesta sequencia(n precisa ser o mesmo nome))
+            //Lógica
+            console.log('indice ' + indice + ' valor: ' + valor)
+
+            if (valor == 'Lucas'){
+                array[indice] = 'Um novo valor'
+            }
+
+            
+        })
+
+        console.log(ListaFuncionários)
+
+    </script>
+    
+</body>
+</html>

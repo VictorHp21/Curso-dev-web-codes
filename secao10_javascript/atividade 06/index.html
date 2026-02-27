@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - tabuada com while</title>
+</head>
+<body>
+
+     <span> Digite um número:
+        <input type="text" id="campo">
+    
+        <button onclick="calcular()">Enviar</button>
+    </span>
+
+
+    <h1>Resultado: </h1>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        function calcular(){
+            var num = Number(document.getElementById('campo').value)
+
+            var i = 0
+
+            while (i <= 10){
+                document.getElementById('resultado').innerHTML += `${num} * ${i} = ${num * i}  <br>`
+
+                i++
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
