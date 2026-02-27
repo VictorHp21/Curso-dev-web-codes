@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Tabuada</title>
+
+ 
+</head>
+<body>
+
+    <span> Digite um número:
+        <input type="text" id="campo">
+    
+        <button onclick="calcular()">Enviar</button>
+    </span>
+
+
+    <h1>Resultado: </h1>
+
+    <p id="resultado"></p>
+
+       <script>
+
+
+        function calcular(){
+
+             var num = Number(document.getElementById('campo').value)
+
+            var temp = num
+
+            for (var i = 0; i <= 10; i++){
+
+                temp = num * i
+
+                console.log(temp)
+
+                resultado.innerHTML += `${num} x ${i} = ${temp} <br>`
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
