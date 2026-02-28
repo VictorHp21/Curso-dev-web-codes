@@ -36,7 +36,7 @@ function posicaoRandomica() {
     var mosquito = document.createElement('img')
 
     mosquito.src = '../mosca.png'
-    mosquito.className = tamanhoAleatorio()
+    mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
 
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
@@ -45,7 +45,7 @@ function posicaoRandomica() {
 
     document.body.appendChild(mosquito)
 
-    tamanhoAleatorio()
+    
 }
 
 
@@ -69,3 +69,21 @@ function posicaoRandomica() {
 
 
 
+    // orietação da imagem tbm de modo aleatorio (olhando para esquerda ou direita)
+
+    function ladoAleatorio(){
+
+        var classeEscala = Math.floor(Math.random() * 2)
+
+        switch(classeEscala){
+
+            case 0:
+                return 'ladoA'
+
+            case 1:
+                return 'ladoB'
+
+            
+        }
+
+    }
