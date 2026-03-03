@@ -8,6 +8,23 @@ var largura
 
 var vidas = 1
 
+var tempo = 10
+
+var criaMosquitoTempo = 1500
+
+var nivel = window.location.search
+
+nivel = nivel.replace('?', '')
+
+if (nivel === 'normal'){
+    criaMosquitoTempo = 1500
+} else if (nivel === 'dificil'){
+    criaMosquitoTempo = 1000
+} else {
+    criaMosquitoTempo = 750
+}
+
+
 function ajustaTamPalcoJogo() {
     altura = window.innerHeight
     largura = window.innerWidth
@@ -22,6 +39,26 @@ ajustaTamPalcoJogo() // tem que chamar a função antes para ter os valores de a
 
 // Math.floor == arredondamento para baixo
 
+var cronometro = setInterval(function(){
+    tempo -= 1
+
+    if(tempo < 0){
+
+        // logica de vitória
+        clearInterval(cronometro)
+        clearInterval(criaMosquito)
+
+        window.location.href = 'vitoria.html'
+
+
+    } else {
+         document.getElementById('cronometro').innerHTML = tempo
+    }
+
+   
+
+    
+}, 1000)
 
 
 
