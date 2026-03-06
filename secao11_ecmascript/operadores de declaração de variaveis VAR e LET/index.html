@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAscript</title>
+
+    <script>
+        //3 Escopos: global, função e bloco
+
+        // let preserva o escopo em que a variável foi criada
+
+        var serie = 'Got' // global
+
+        console.log(serie)
+
+        x()
+
+        function x(){
+
+            var serie = 'twd' // escopo da função
+
+            console.log(serie)
+
+            if(true){
+                //bloco -- utilizando o var a variavel sofre uma elevação, neste caso ela iria para o escopo da função
+
+                // var serie 2 = 'breaking bad'
+
+                
+                console.log(serie)
+            }
+
+            if(true){
+
+                // preserva o escopo em que a variável foi criada, assim n sera possível acessa-la fora do bloco, como o teste abaixo
+                let filme = 'tdp'
+
+                console.log(filme)
+            }
+
+
+        }
+
+        console.log(filme)
+
+    </script>
+</head>
+<body>
+
+    <p>teste</p>
+    
+</body>
+</html>
